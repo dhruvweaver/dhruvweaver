@@ -19,7 +19,11 @@ class MyApp extends StatelessWidget {
         textTheme: TextTheme(
           headline6: TextStyle(fontSize: 36),
           bodyText2: TextStyle(fontSize: 18),
-          headline3: TextStyle(fontSize: 18, color: Colors.indigo.shade900),
+          headline3: TextStyle(
+            fontSize: 18,
+            color: Colors.blue.shade900,
+            // decoration: TextDecoration.underline,
+          ),
         ),
       ),
       home: MyHomePage(title: 'Dhruv Weaver'),
@@ -75,7 +79,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                     ),
                   ),
-                  Text(
+                  SelectableText(
                     ' - where you can see my projects',
                     style: Theme.of(context).textTheme.bodyText2,
                   ),
