@@ -26,6 +26,26 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
+      darkTheme: ThemeData(
+        primaryColor: Colors.grey.shade900,
+        canvasColor: Colors.grey.shade900,
+        fontFamily: 'Jost',
+        textTheme: TextTheme(
+          headline6: TextStyle(
+            fontSize: 36,
+            color: Colors.grey.shade200,
+          ),
+          bodyText2: TextStyle(
+            fontSize: 18,
+            color: Colors.grey.shade200,
+          ),
+          headline3: TextStyle(
+            fontSize: 18,
+            color: Colors.blue.shade300,
+            // decoration: TextDecoration.underline,
+          ),
+        ),
+      ),
       home: MyHomePage(title: 'Dhruv Weaver'),
     );
   }
